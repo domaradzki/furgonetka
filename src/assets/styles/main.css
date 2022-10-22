@@ -284,6 +284,38 @@ template {
 [hidden] {
   display: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+* {
+  box-sizing: border-box;
+}
 .app {
-  background-color: blue;
+  display: grid;
+  grid-template-columns: 1fr minmax(auto, 1440px) 1fr;
+}
+.container {
+  grid-column: 2;
+  width: 100%;
+}
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 80px;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 100px;
+  height: 90px;
+}
+.menu__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
