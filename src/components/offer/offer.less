@@ -1,0 +1,41 @@
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 48px 20px;
+  background-color: @bg-second-color;
+  width: 100%;
+}
+.offer__title {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 110%;
+  color: @text-color;
+  text-align: center;
+  margin: 0;
+  span {
+    font-style: normal;
+  }
+}
+.offer__paragraph {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: @text-color;
+  width: 70%;
+}
+
+@media only screen and (min-width: 600px) {
+  .offer {
+    padding: 48px 100px;
+  }
+  .offer__paragraph {
+    width: 50%;
+  }
+}
