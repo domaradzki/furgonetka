@@ -1,3 +1,4 @@
+import Hero from '../hero/hero';
 import Menu from '../menu/menu';
 
 function App() {
@@ -5,7 +6,9 @@ function App() {
     <div className="app">
       <div className="container">
         <Menu />
-        <main className="main"></main>
+        <main className="main">
+          <Hero />
+        </main>
       </div>
     </div>
   );
