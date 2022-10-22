@@ -494,13 +494,15 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 16px;
-  padding: 48px 20px;
+  padding: 48px 20px 0;
   background-color: #ffffff;
 }
+.offer__items h2 {
+  margin-bottom: 48px;
+}
 @media only screen and (min-width: 600px) {
-  .offer__intro,
   .offer__items {
-    padding: 48px 100px;
+    padding: 48px 100px 0;
   }
   .offer__paragraph {
     width: 50%;
@@ -516,7 +518,7 @@ body {
   flex-direction: column-reverse;
 }
 .offer__item:last-child {
-  margin-bottom: 80px;
+  margin-bottom: 0px;
 }
 .offer__content {
   display: flex;
@@ -548,15 +550,6 @@ body {
 .offer__image {
   width: 375px;
   height: 250px;
-}
-@media only screen and (min-width: 600px) {
-  .offer__intro,
-  .offer__items {
-    padding: 48px 100px;
-  }
-  .offer__paragraph {
-    width: 50%;
-  }
 }
 @media only screen and (min-width: 1440px) {
   .offer__item {
@@ -601,4 +594,92 @@ body {
   color: #1a3344;
   text-align: center;
   margin: 0;
+}
+.features {
+  width: 100%;
+}
+.features__items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 50px 60px;
+  gap: 16px;
+  background-color: #f6fbff;
+}
+.delivery__item {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  background-color: #f6fbff;
+}
+.delivery__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+  width: 480px;
+}
+.delivery__content ul {
+  list-style-image: url('../../assets/images/list_icon.svg');
+}
+.delivery__content li {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1a3344;
+  padding: 15px 0;
+}
+.delivery__image {
+  width: 340px;
+  height: 194px;
+}
+@media only screen and (min-width: 600px) {
+  .features__items {
+    padding: 0px 75px 60px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .features__items {
+    padding: 0px 300px 80px;
+  }
+}
+.feature__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+  width: 260px;
+  height: 188px;
+}
+.feature__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+  width: 260px;
+  height: 24px;
+}
+.feature__content p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #1a3344;
+  margin: 0;
+}
+.feature__image {
+  width: 140px;
+  height: 140px;
 }
