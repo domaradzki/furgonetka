@@ -1,11 +1,17 @@
 .offer {
+  width: 100%;
+}
+.offer__intro {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
   padding: 48px 20px;
   background-color: @bg-second-color;
-  width: 100%;
+}
+.offer__items {
+  .offer__intro;
+  background-color: @bg-color;
 }
 .offer__title {
   font-family: 'Ubuntu';
@@ -20,6 +26,10 @@
     font-style: normal;
   }
 }
+.offer__title-margin {
+  .offer__title;
+  margin: 48px 0;
+}
 .offer__paragraph {
   font-family: 'Open Sans';
   font-style: normal;
@@ -32,7 +42,8 @@
 }
 
 @media only screen and (min-width: 600px) {
-  .offer {
+  .offer__intro,
+  .offer__items {
     padding: 48px 100px;
   }
   .offer__paragraph {

@@ -448,13 +448,24 @@ body {
   }
 }
 .offer {
+  width: 100%;
+}
+.offer__intro {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
   padding: 48px 20px;
   background-color: #f6fbff;
-  width: 100%;
+}
+.offer__items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 48px 20px;
+  background-color: #f6fbff;
+  background-color: #ffffff;
 }
 .offer__title {
   font-family: 'Ubuntu';
@@ -469,6 +480,20 @@ body {
 .offer__title span {
   font-style: normal;
 }
+.offer__title-margin {
+  font-family: 'Ubuntu';
+  font-style: italic;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 110%;
+  color: #1a3344;
+  text-align: center;
+  margin: 0;
+  margin: 48px 0;
+}
+.offer__title-margin span {
+  font-style: normal;
+}
 .offer__paragraph {
   font-family: 'Open Sans';
   font-style: normal;
@@ -480,7 +505,62 @@ body {
   width: 70%;
 }
 @media only screen and (min-width: 600px) {
-  .offer {
+  .offer__intro,
+  .offer__items {
+    padding: 48px 100px;
+  }
+  .offer__paragraph {
+    width: 50%;
+  }
+}
+.offer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 96px;
+  margin-bottom: 32px;
+}
+.offer__item:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.offer__item:last-child {
+  margin-bottom: 80px;
+}
+.offer__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 0px 0px 32px;
+  gap: 16px;
+  width: 496px;
+}
+.offer__content h3 {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 37px;
+  color: #1a3344;
+  margin: 0;
+}
+.offer__content p {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #1a3344;
+  margin: 0;
+}
+.offer__image {
+  width: 375px;
+  height: 250px;
+}
+@media only screen and (min-width: 600px) {
+  .offer__intro,
+  .offer__items {
     padding: 48px 100px;
   }
   .offer__paragraph {
