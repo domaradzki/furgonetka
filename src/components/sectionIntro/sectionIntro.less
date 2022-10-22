@@ -1,0 +1,26 @@
+.section__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 48px 20px;
+  background-color: @bg-second-color;
+}
+.section__paragraph {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: @text-color;
+  width: 70%;
+}
+@media only screen and (min-width: 600px) {
+  .section__intro {
+    padding: 48px 100px;
+  }
+  .section__paragraph {
+    width: 50%;
+  }
+}

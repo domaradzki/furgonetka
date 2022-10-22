@@ -3,25 +3,24 @@ import { ReactComponent as StandardShipment } from '../../assets/images/standard
 import { ReactComponent as CityShipment } from '../../assets/images/city_shipment.svg';
 import { ReactComponent as PaletteShipment } from '../../assets/images/palette_shipment.svg';
 import { ReactComponent as NonStandardShipment } from '../../assets/images/nonstandard_shipment.svg';
+import SectionIntro from '../sectionIntro/sectionIntro';
+import SectionTitle from '../sectionTitle/sectionTitle';
 
 function Offer() {
   return (
     <section className="offer">
-      <div className="offer__intro">
-        <h2 className="offer__title">
-          Wybierz tanie i szybkie <span>przesyłki krajowe</span>
-        </h2>
-        <p className="offer__paragraph">
-          Wyceniaj i wysyłaj tanie paczki krajowe bez podpisywania
+      <SectionIntro
+        description="Wyceniaj i wysyłaj tanie paczki krajowe bez podpisywania
           umowy i określania minimum logistycznego. U nas płacisz
           tylko za nadane przesyłki. Nie pobieramy abonamentu za
-          prowadzenie konta czy korzystanie z dostępnych narzędzi.
-        </p>
-      </div>
+          prowadzenie konta czy korzystanie z dostępnych narzędzi."
+      >
+        <em>Wybierz tanie i szybkie</em> przesyłki krajowe
+      </SectionIntro>
       <div className="offer__items">
-        <h2 className="offer__title-margin">
-          Szeroki wybór przesyłek krajowych
-        </h2>
+        <SectionTitle>
+          Szeroki wybór <em>przesyłek krajowych</em>
+        </SectionTitle>
         <OfferItem
           title="Przesyłki standardowe"
           description="Nadajesz przesyłki drobnicowe krajowe do różnych miast w Polsce? Wysyłaj koperty DOX (np. z dokumentami) i przesyłki kurierskie (nawet do 70 kg) – prywatnie i biznesowo za pomocą naszego serwisu."

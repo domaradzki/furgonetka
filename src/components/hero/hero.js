@@ -8,7 +8,7 @@ function Hero() {
         <div className="hero__content">
           <div className="hero__textgroup">
             <div className="hero__title">
-              <caption>Furgonetka</caption>
+              <p className="hero__caption">Furgonetka</p>
               <h1>
                 Przesyłki krajowe
                 <br />

@@ -394,7 +394,7 @@ body {
   gap: 4px;
   position: relative;
 }
-.hero__title caption {
+.hero__title .hero__caption {
   font-family: 'Ubuntu';
   font-style: normal;
   font-weight: 300;
@@ -489,59 +489,13 @@ body {
 .offer {
   width: 100%;
 }
-.offer__intro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  padding: 48px 20px;
-  background-color: #f6fbff;
-}
 .offer__items {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
   padding: 48px 20px;
-  background-color: #f6fbff;
   background-color: #ffffff;
-}
-.offer__title {
-  font-family: 'Ubuntu';
-  font-style: italic;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 110%;
-  color: #1a3344;
-  text-align: center;
-  margin: 0;
-}
-.offer__title span {
-  font-style: normal;
-}
-.offer__title-margin {
-  font-family: 'Ubuntu';
-  font-style: italic;
-  font-weight: 500;
-  font-size: 48px;
-  line-height: 110%;
-  color: #1a3344;
-  text-align: center;
-  margin: 0;
-  margin: 48px 0;
-}
-.offer__title-margin span {
-  font-style: normal;
-}
-.offer__paragraph {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 150%;
-  text-align: center;
-  color: #1a3344;
-  width: 70%;
 }
 @media only screen and (min-width: 600px) {
   .offer__intro,
@@ -612,4 +566,39 @@ body {
   .offer__item:nth-child(odd) {
     flex-direction: row-reverse;
   }
+}
+.section__intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 48px 20px;
+  background-color: #f6fbff;
+}
+.section__paragraph {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  color: #1a3344;
+  width: 70%;
+}
+@media only screen and (min-width: 600px) {
+  .section__intro {
+    padding: 48px 100px;
+  }
+  .section__paragraph {
+    width: 50%;
+  }
+}
+.section__title {
+  font-family: 'Ubuntu';
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 110%;
+  color: #1a3344;
+  text-align: center;
+  margin: 0;
 }
