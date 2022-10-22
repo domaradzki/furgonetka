@@ -3,7 +3,7 @@
   justify-content: space-between;
   flex-direction: column;
   align-items: center;
-  gap: 80px;
+  gap: 40px;
   max-width: 1440px;
   padding: 0 20px;
 }
@@ -12,6 +12,10 @@
   flex-direction: column;
   align-items: center;
   padding: 0px;
+  .hero__image {
+    width: 320px;
+    height: 220px;
+  }
 }
 .hero__content {
   display: flex;
@@ -27,8 +31,8 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 300;
-    font-size: 20px;
-    line-height: 27px;
+    font-size: 16px;
+    line-height: 20px;
     color: @text-color;
     margin: 0;
   }
@@ -50,7 +54,7 @@
     font-family: 'Ubuntu';
     font-style: normal;
     font-weight: 700;
-    font-size: 68px;
+    font-size: 42px;
     line-height: 110%;
     letter-spacing: -0.035em;
     color: @text-color;
@@ -63,9 +67,11 @@
   }
   .title__underline {
     position: absolute;
-    top: 156px;
+    top: 99px;
     left: 0;
     z-index: -1;
+    width: 227px;
+    height: 16px;
   }
 }
 .hero__button {
@@ -75,8 +81,8 @@
     justify-content: center;
     align-items: center;
     padding: 8px 32px;
-    width: 235px;
-    height: 53px;
+    width: 205px;
+    height: 40px;
     background: @button-primary-color;
     border: 1.5px solid @button-primary-border-color;
     box-shadow: 2px 2px 0px @button-primary-border-color;
@@ -84,8 +90,8 @@
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 16px;
+    line-height: 22px;
     text-align: center;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -98,9 +104,45 @@
   .hero {
     flex-direction: row;
     gap: 15px;
-    padding: 0 100px;
+    padding: 0 30px;
   }
   .hero__container {
     width: calc(100% / 2);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    padding: 0 100px;
+  }
+  .hero__container {
+    .hero__image {
+      width: 568px;
+      height: 355px;
+    }
+  }
+  .hero__textgroup {
+    p {
+      font-size: 20px;
+      line-height: 27px;
+    }
+  }
+  .hero__title {
+    h1 {
+      font-size: 68px;
+    }
+    .title__underline {
+      top: 156px;
+      width: 379px;
+      height: 21px;
+    }
+  }
+  .hero__button {
+    button {
+      width: 235px;
+      height: 53px;
+      font-size: 18px;
+      line-height: 25px;
+    }
   }
 }

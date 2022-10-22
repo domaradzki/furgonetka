@@ -28,7 +28,7 @@ function Hero() {
         </div>
       </div>
       <div className="hero__container">
-        <HeroImage />
+        <HeroImage className="hero__image" />
       </div>
     </section>
   );
