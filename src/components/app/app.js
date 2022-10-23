@@ -1,5 +1,6 @@
 import CallToAction from '../callToAction/callToAction';
 import Features from '../features/features';
+import Contact from '../contact/contact';
 import Hero from '../hero/hero';
 import Menu from '../menu/menu';
 import Offer from '../offer/offer';
@@ -15,6 +16,7 @@ function App() {
         <Features />
         <Partners />
         <CallToAction />
+        <Contact />
       </main>
     </div>
   );
