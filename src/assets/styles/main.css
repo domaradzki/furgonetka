@@ -568,6 +568,15 @@ body {
   padding: 48px 20px;
   background-color: #f6fbff;
 }
+.section__intro--white {
+  background-color: #ffffff;
+}
+.section__intro--pading-80-32 {
+  padding: 80px 20px 32px;
+}
+.section__intro--pading-0-32 {
+  padding: 0px 20px 32px;
+}
 .section__paragraph {
   font-family: 'Open Sans';
   font-style: normal;
@@ -577,13 +586,20 @@ body {
   text-align: center;
   color: #1a3344;
   width: 70%;
+  margin: 0;
 }
 @media only screen and (min-width: 600px) {
   .section__intro {
     padding: 48px 100px;
   }
+  .section__intro--pading-80-32 {
+    padding: 80px 100px 32px;
+  }
+  .section__intro--pading-0-32 {
+    padding: 0px 100px 32px;
+  }
   .section__paragraph {
-    width: 50%;
+    width: 60%;
   }
 }
 .section__title {
@@ -748,4 +764,33 @@ body {
 .tag-xpress {
   background: #000000;
   color: #ffffff;
+}
+.partners {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 0px 50px 60px;
+}
+.partners__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  row-gap: 24px;
+  column-gap: 28px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 600px) {
+  .features__items {
+    padding: 0px 75px 60px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .partners {
+    padding: 0px 180px 80px;
+  }
+  .delivery__item {
+    flex-direction: row-reverse;
+  }
 }

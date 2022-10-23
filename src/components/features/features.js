@@ -32,7 +32,10 @@ function Features() {
           <OrderingPackage />
         </FeatureItem>
       </div>
-      <SectionIntro description="Jeśli zależy Ci na czasie, możesz przyspieszyć transport zleconej paczki. Z Furgonetką nadasz najszybsze przesyłki krajowe. Wystarczy, że dobierzesz odpowiednią usługę dodatkową w zależności od przewoźnika:">
+      <SectionIntro
+        padding80
+        description="Jeśli zależy Ci na czasie, możesz przyspieszyć transport zleconej paczki. Z Furgonetką nadasz najszybsze przesyłki krajowe. Wystarczy, że dobierzesz odpowiednią usługę dodatkową w zależności od przewoźnika:"
+      >
         <em>Dogodny </em>czas dostawy
       </SectionIntro>
       <div className="delivery__item">

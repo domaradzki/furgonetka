@@ -6,6 +6,15 @@
   padding: 48px 20px;
   background-color: @bg-second-color;
 }
+.section__intro--white {
+  background-color: @bg-color;
+}
+.section__intro--pading-80-32 {
+  padding: 80px 20px 32px;
+}
+.section__intro--pading-0-32 {
+  padding: 0px 20px 32px;
+}
 .section__paragraph {
   font-family: 'Open Sans';
   font-style: normal;
@@ -15,12 +24,19 @@
   text-align: center;
   color: @text-color;
   width: 70%;
+  margin: 0;
 }
 @media only screen and (min-width: 600px) {
   .section__intro {
     padding: 48px 100px;
   }
+  .section__intro--pading-80-32 {
+    padding: 80px 100px 32px;
+  }
+  .section__intro--pading-0-32 {
+    padding: 0px 100px 32px;
+  }
   .section__paragraph {
-    width: 50%;
+    width: 60%;
   }
 }

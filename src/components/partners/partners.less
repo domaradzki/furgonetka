@@ -1,0 +1,31 @@
+.partners {
+  width: 100%;
+  background-color: @bg-color;
+  padding: 0px 50px 60px;
+}
+
+.partners__items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  row-gap: 24px;
+  column-gap: 28px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 600px) {
+  .features__items {
+    padding: 0px 75px 60px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .partners {
+    padding: 0px 180px 80px;
+  }
+  .delivery__item {
+    flex-direction: row-reverse;
+  }
+}
