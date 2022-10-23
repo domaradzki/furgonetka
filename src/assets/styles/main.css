@@ -597,6 +597,8 @@ body {
 }
 .features {
   width: 100%;
+  padding-bottom: 80px;
+  background-color: #f6fbff;
 }
 .features__items {
   display: flex;
@@ -605,7 +607,6 @@ body {
   align-items: flex-start;
   padding: 0px 50px 60px;
   gap: 16px;
-  background-color: #f6fbff;
 }
 .delivery__item {
   display: flex;
@@ -614,27 +615,43 @@ body {
   align-items: center;
   padding: 0px;
   gap: 24px;
-  background-color: #f6fbff;
 }
 .delivery__content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
   gap: 16px;
   width: 480px;
 }
 .delivery__content ul {
-  list-style-image: url('../../assets/images/list_icon.svg');
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
 }
-.delivery__content li {
+.delivery__content ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   line-height: 150%;
   color: #1a3344;
-  padding: 15px 0;
+}
+.delivery__content ul li svg {
+  align-self: flex-start;
+}
+.delivery__tags {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
 }
 .delivery__image {
   width: 340px;
@@ -648,6 +665,9 @@ body {
 @media only screen and (min-width: 1440px) {
   .features__items {
     padding: 0px 300px 80px;
+  }
+  .delivery__item {
+    flex-direction: row-reverse;
   }
 }
 .feature__item {
@@ -682,4 +702,50 @@ body {
 .feature__image {
   width: 140px;
   height: 140px;
+}
+.tag,
+.tag-inpost,
+.tag-dhl,
+.tag-dpd,
+.tag-pocztex,
+.tag-deligoo,
+.tag-xpress {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 8px;
+  gap: 10px;
+  height: 17px;
+  border-radius: 2px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 14px;
+  white-space: nowrap;
+}
+.tag-inpost {
+  background: #ffcc01;
+  color: #000000;
+}
+.tag-dhl {
+  background: #ffcc00;
+  color: #cc0000;
+}
+.tag-dpd {
+  background: #e61c4a;
+  color: #ffffff;
+}
+.tag-pocztex {
+  background: #ee3047;
+  color: #ffffff;
+}
+.tag-deligoo {
+  background: #2dc8ec;
+  color: #ffffff;
+}
+.tag-xpress {
+  background: #000000;
+  color: #ffffff;
 }

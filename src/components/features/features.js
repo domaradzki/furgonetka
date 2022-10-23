@@ -1,12 +1,13 @@
 import SectionIntro from '../sectionIntro/sectionIntro';
 import FeatureItem from '../featureItem/featureItem';
+import Tag from '../tag/tag';
 import { ReactComponent as AdressBook } from '../../assets/images/adress_book.svg';
 import { ReactComponent as OrderData } from '../../assets/images/order_data.svg';
 import { ReactComponent as ShipmentTemplates } from '../../assets/images/shipment_templates.svg';
 import { ReactComponent as TrackingShipments } from '../../assets/images/tracking_shipments.svg';
 import { ReactComponent as OrderingPackage } from '../../assets/images/ordering_package.svg';
 import { ReactComponent as Delivery } from '../../assets/images/delivery.svg';
-import icon from '../../assets/images/list_icon.svg';
+import { ReactComponent as Tick } from '../../assets/images/list_icon.svg';
 
 function Features() {
   return (
@@ -37,12 +38,43 @@ function Features() {
       <div className="delivery__item">
         <div className="delivery__content">
           <ul>
-            <li>Paczka w Weekend </li>
-            <li>Doręczenie przesyłki w sobotę </li>
-            <li>Doręczenie do danej godziny</li>
-            <li>Doręczenie na drugi dzień</li>
-            <li>Doręczenie we wskazany dzień</li>
-            <li>Przesyłka ekspresowa </li>
+            <li>
+              <Tick />
+              Paczka w Weekend
+              <Tag className="tag-inpost" name="InPost" />
+            </li>
+            <li>
+              <Tick />
+              Doręczenie przesyłki w sobotę
+              <div className="delivery__tags">
+                <Tag className="tag-inpost" name="InPost" />
+                <Tag className="tag-dhl" name="DHL" />
+                <Tag className="tag-dpd" name="DPD" />
+              </div>
+            </li>
+            <li>
+              <Tick />
+              Doręczenie do danej godziny
+              <Tag className="tag-dpd" name="DPD" />
+            </li>
+            <li>
+              <Tick />
+              Doręczenie na drugi dzień
+              <Tag className="tag-dpd" name="DPD" />
+            </li>
+            <li>
+              <Tick />
+              Doręczenie we wskazany dzień
+              <Tag className="tag-pocztex" name="Pocztex" />
+            </li>
+            <li>
+              <Tick />
+              Przesyłka ekspresowa
+              <div className="delivery__tags">
+                <Tag className="tag-deligoo" name="DeliGoo" />
+                <Tag className="tag-xpress" name="Xpress Delivery" />
+              </div>
+            </li>
           </ul>
         </div>
         <div className="delivery__image">
