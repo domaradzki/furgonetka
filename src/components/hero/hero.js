@@ -1,3 +1,4 @@
+import CTAButton from '../ctaButton/ctaButton';
 import { ReactComponent as HeroImage } from '../../assets/images/hero.svg';
 import { ReactComponent as Underline } from '../../assets/images/underline.svg';
 
@@ -22,9 +23,9 @@ function Hero() {
               punktów odbioru i automatów paczkowych.
             </p>
           </div>
-          <div className="hero__button">
-            <button>Nadaj przesyłkę</button>
-          </div>
+          <CTAButton className="button--blue">
+            Nadaj przesyłkę
+          </CTAButton>
         </div>
       </div>
       <div className="hero__container">

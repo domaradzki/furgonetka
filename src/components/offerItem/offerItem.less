@@ -16,9 +16,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0px 0px 0px 32px;
+  padding: 0px 0px 32px;
   gap: 16px;
-  width: 496px;
+
   h3 {
     font-family: 'Ubuntu';
     font-style: normal;
@@ -39,8 +39,9 @@
   }
 }
 .offer__image {
-  width: 375px;
-  height: 250px;
+  svg {
+    width: 300px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -50,5 +51,12 @@
     &:nth-child(odd) {
       flex-direction: row-reverse;
     }
+  }
+  .offer__content {
+    width: 496px;
+  }
+  .offer__image {
+    width: 375px;
+    height: 250px;
   }
 }

@@ -5,7 +5,7 @@ function OfferItem({ title, description, children }) {
         <h3>{title}</h3>
         <p>{description}</p>
       </div>
-      <div className="offer_iamge">{children}</div>
+      <div className="offer__image">{children}</div>
     </div>
   );
 }

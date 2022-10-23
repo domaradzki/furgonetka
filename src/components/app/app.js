@@ -1,3 +1,4 @@
+import CallToAction from '../callToAction/callToAction';
 import Features from '../features/features';
 import Hero from '../hero/hero';
 import Menu from '../menu/menu';
@@ -13,6 +14,7 @@ function App() {
         <Offer />
         <Features />
         <Partners />
+        <CallToAction />
       </main>
     </div>
   );

@@ -16,9 +16,14 @@ body {
 .main {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 80px;
+  row-gap: 40px;
   grid-column: 1/4;
   width: 100%;
   align-items: center;
   justify-items: center;
+}
+@media only screen and (min-width: 1440px) {
+  .main {
+    row-gap: 80px;
+  }
 }
